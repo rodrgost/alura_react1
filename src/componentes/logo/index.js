@@ -3,7 +3,7 @@ import './estilo.css'
 
 function ExibeLogo() {
     return (<div className='logo'>
-        <img src={logo} className='App-logo' alt='logo' />
+        <img src={logo} className='logo-img' alt='logo' />
         <p><strong>Alura</strong> books</p>
     </div>);
 }
