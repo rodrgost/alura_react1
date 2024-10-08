@@ -1,11 +1,19 @@
 import logo from '../../imagens/logo.svg';
-import './estilo.css'
+import styled from 'styled-components';
+
+const LogoComponent = styled.div`
+    display: flex;
+    font-size: 30px;
+`
+const LogoImgComponent = styled.img`
+    margin: 10px;
+`
 
 function ExibeLogo() {
-    return (<div className='logo'>
-        <img src={logo} className='logo-img' alt='logo' />
+    return (<LogoComponent>
+        <LogoImgComponent src={logo} alt='logo'/>
         <p><strong>Alura</strong> books</p>
-    </div>);
+    </LogoComponent>);
 }
 
 export default ExibeLogo
